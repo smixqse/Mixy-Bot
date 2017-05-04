@@ -5,7 +5,6 @@ moment().format();
 moment.locale('pt-BR');
 console.log(moment.locale());
 const fs = require("fs")
-let vezesExecutado = JSON.parse(fs.readFileSync('./database/testcommand.json', 'utf8'))
 const config = require("./config.json")
 
 // Código
