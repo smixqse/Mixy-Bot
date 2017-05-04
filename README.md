@@ -19,21 +19,21 @@ Crie votações, faça o bot falar, e muitas coisas a mais estarão por vir!
 
 Se você quiser hostear o Mixy, siga as etapas:
 
-1. Instale o node.js.
+**1. Instale o node.js.**
 
 Para rodar o bot, você precisa ter o node.js. Baixe ele clicando [aqui](https://nodejs.org/en/download/), depois instale-o.
 
-2. Instale o discord.js.
+**2. Instale o discord.js.**
 
 Considerando que o bot foi feito usando discord.js, devemos baixá-lo para ele funcionar. Crie uma pasta com o nome do bot em algum lugar de seu PC, e coloque dentro tudo que está dentro [desta pasta](./MixyBot). Depois, segure Shift e clique com o botão direito do mouse em algum lugar vazio da pasta. Selecione "Abrir janela de comando aqui."
 
 <img src="https://i.imgur.com/xHH9fw3.png">
 
-Quando o CDM abrir, digite "npm install --save discord.js".
+Quando o CMD abrir, digite "npm install --save discord.js".
 
 Aguarde até que você possa digitar novamente no CMD, e então feche ele.
 
-3. Configure o bot.
+***3. Configure o bot.**
 
 Você não vai poder hostear no mesmo usuário que o MixyBot oficial, então você deverá criar um novo. [Clique aqui](https://discordapp.com/developers/applications/me) e, quando a página carregar, clique em "New app". Coloque as informações do seu bot, de preferência as mesmas do Mixy original, e então clique em "Create app", depois clique em "Create bot user".
 
@@ -51,6 +51,6 @@ https://discordapp.com/oauth2/authorize?&client_id=CLIENT_ID&scope=bot
 
 Agora, entre no link.
 
-4. Rode o bot.
+**4. Rode o bot.**
 
 Você está pronto! Para criar um executável que rode seu bot, clique com o botão direito em algum lugar vazio da pasta, entre em "Novo", e crie um arquivo de texto. Abra ele e coloque: 'node bot.js'. Depois, salve como '.bat'. Agora, você pode executar seu bot clicando no .bat.
