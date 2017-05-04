@@ -1,0 +1,10 @@
+{"avatar": {"description": "Mostra o avatar de algum usuário, ou servidor.", "usage": "mixy.avatar @SMix | server | me"},
+ "prune": {"description": "Apaga últimas mensagens do canal atual.", "usage": "mixy.prune 5"},
+ "eval": {"description": "Executa um código. APENAS O CRIADOR.", "usage": "mixy.eval bot.token"},
+ "kick": {"description": "Expulsa um membro do server.", "usage": "mixy.kick @SMix"},
+ "oauth": {"description": "Pega um link de convite pra um bot.", "usage": "mixy.oauth @MixyBot"},
+ "poll": {"description": "Cria uma votação feita de reações.", "usage": "mixy.poll Discord.js é bom?"},
+ "reload": {"description": "Recarrega um comando. APENAS O CRIADOR.", "usage": "mixy.reload kick"},
+ "say": {"description": "Faz o bot dizer algo.", "usage": "mixy.say Oi!"},
+ "serverinfo": {"description": "Mostra informações do server atual.", "usage": "mixy.serverinfo"},
+ "userinfo": {"description": "Mostra informações de um usuário.", "usage": "mixy.userinfo @SMix"}}
