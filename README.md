@@ -23,15 +23,15 @@ Se você quiser hostear o Mixy, siga as etapas:
 
 Para rodar o bot, você precisa ter o node.js. Baixe ele clicando [aqui](https://nodejs.org/en/download/), depois instale-o.
 
-**2. Instale o discord.js.**
+**2. Instale o discord.js e moment.js.**
 
 Considerando que o bot foi feito usando discord.js, devemos baixá-lo para ele funcionar. Crie uma pasta com o nome do bot em algum lugar de seu PC, e coloque dentro tudo que está dentro [desta pasta](./MixyBot). Depois, segure Shift e clique com o botão direito do mouse em algum lugar vazio da pasta. Selecione "Abrir janela de comando aqui."
 
 <img src="https://i.imgur.com/xHH9fw3.png">
 
-Quando o CMD abrir, digite "npm install --save discord.js".
+Quando o CMD abrir, digite `npm install --save discord.js`.
 
-Aguarde até que você possa digitar novamente no CMD, e então feche ele.
+Aguarde até que você possa digitar novamente no CMD, então digite `npm install moment --save`, aguarde, e feche o CMD.
 
 ***3. Configure o bot.**
 
@@ -44,6 +44,12 @@ Logo depois, do lado de "Token", clique em "click to reveal".
 :warning: **Não compartilhe seu token com ninguém. o token dá acesso total a seu bot.** :warning:
 
 Copie o token que aparecer. Depois, de volta à pasta com os arquivos do bot, abra `config.json`. Onde tem "COLOQUE_SEU_TOKEN_AQUI", substitua pelo seu token, e salve o arquivo.
+
+No Discord, crie uma menção sua, e depois coloque `\` no início, e mande como uma mensagem. Vai aparecer mais ou menos assim:
+
+`<@SEU_ID>`
+
+Copie o número depois do @, e cole no `config.json` dentro das aspas, e salve.
 
 Para adicionar seu bot a servers, substitua "CLIENT_ID" pelo Client ID mostrado nas informações do seu bot, no link abaixo.
 
