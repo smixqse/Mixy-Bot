@@ -7,4 +7,7 @@
  "reload": {"description": "Recarrega um comando. APENAS O CRIADOR.", "usage": "mixy.reload kick"},
  "say": {"description": "Faz o bot dizer algo.", "usage": "mixy.say Oi!"},
  "serverinfo": {"description": "Mostra informações do server atual.", "usage": "mixy.serverinfo"},
- "userinfo": {"description": "Mostra informações de um usuário.", "usage": "mixy.userinfo @SMix"}}
+ "userinfo": {"description": "Mostra informações de um usuário.", "usage": "mixy.userinfo @SMix"},
+ "ncmd": {"description": "Adiciona um comando personalizado ao servidor atual.", "usage": "mixy.ncmd (o que o bot deve detectar) | (o que ele deve responder)"},
+ "dcmd": {"description": "Deleta um comando personalizado.", "usage": "mixy.dcmd (comando a deletar)"},
+ "lcmd": {"description": "Vê a lista de comandos personalizados do servidor.", "usage": "mixy.lcmd"}}
