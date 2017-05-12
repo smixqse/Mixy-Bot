@@ -124,7 +124,7 @@ message.channel.sendMessage(':mag_right: | A tradução de `' + args.slice(1).jo
 });
         
         } else {
-            message.channel.sendMessage('<:vpRedTick:257437215615877129> | O idioma digitado não existe. Veja todos os idiomas disponíveis usando `mixy.traslate list`')
+            message.channel.sendMessage('<:vpRedTick:257437215615877129> | O idioma digitado não existe. Veja todos os idiomas disponíveis usando `mixy.translate list`')
         }
     }
 }
