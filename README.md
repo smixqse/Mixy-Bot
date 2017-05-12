@@ -23,7 +23,7 @@ Se você quiser hostear o Mixy, siga as etapas:
 
 Para rodar o bot, você precisa ter o node.js. Baixe ele clicando [aqui](https://nodejs.org/en/download/), depois instale-o.
 
-**2. Instale o discord.js e moment.js.**
+**2. Instale os pacotes necessários.**
 
 Considerando que o bot foi feito usando discord.js, devemos baixá-lo para ele funcionar. Crie uma pasta com o nome do bot em algum lugar de seu PC, e coloque dentro tudo que está dentro [desta pasta](./MixyBot). Depois, segure Shift e clique com o botão direito do mouse em algum lugar vazio da pasta. Selecione "Abrir janela de comando aqui."
 
@@ -31,7 +31,9 @@ Considerando que o bot foi feito usando discord.js, devemos baixá-lo para ele f
 
 Quando o CMD abrir, digite `npm install --save discord.js`.
 
-Aguarde até que você possa digitar novamente no CMD, então digite `npm install moment --save`, aguarde, e feche o CMD.
+Aguarde até que você possa digitar novamente no CMD, então digite `npm install moment --save`.
+
+Aguarde denovo, e digite `npm i google-translate-api`, aguarde, e feche o CMD.
 
 ***3. Configure o bot.**
 
