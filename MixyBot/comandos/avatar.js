@@ -11,7 +11,7 @@ exports.run = (bot, message, args) => {
         } else if (parts[1] === 'me') {
         	message.channel.sendMessage(':frame_photo: | O link para o seu avatar é: **' + message.author.avatarURL + '**.')
         } else {
-        	message.channel.sendMessage('<:vpRedTick:257437215615877129> | Você não deu argumentos corretos. Digite `m.h mixy.avatar` para ver exemplos.').then(message => {
+        	message.channel.sendMessage('<:vpRedTick:257437215615877129> | Você não deu argumentos corretos. Digite `mixy.help mixy.avatar` para ver exemplos.').then(message => {
                             	setTimeout(() => {message.delete()}, 5000)
                             })
         }

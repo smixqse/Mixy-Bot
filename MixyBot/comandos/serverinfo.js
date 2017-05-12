@@ -17,7 +17,8 @@ exports.run = (bot, message, args) => {
             serverinfo.addField('Nome do server', message.guild.name, true);
             serverinfo.addField('Região do server', message.guild.region, true);
             serverinfo.addField('Dono', message.guild.owner.user.username + '#' + message.guild.owner.user.discriminator, true);
-            serverinfo.addField('Membros', message.channel.guild.members.size, true);
+            message.guild.fetchMembers();
+            serverinfo.addField('Membros', message.guild.memberCount, true);
             serverinfo.addField('Data de criação', moment(message.guild.createdAt).format('LL'));
             serverinfo.addField('Cargos', message.guild.roles.size, true);
             membrosOn = ['']

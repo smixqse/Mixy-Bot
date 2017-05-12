@@ -4,6 +4,9 @@ moment.locale('pt-BR');
 const fs = require("fs")
 exports.run = (bot, message, args) => {
     let database = JSON.parse(fs.readFileSync('./database/serversconfig.json', 'utf8'))
+    if(message.channel.type === 'dm') {
+        message.channel.sendMessage('<:vpRedTick:257437215615877129> | Você só pode executar este comando num servidor.')
+    } else {
     if(!database[message.guild.id]) {
         message.channel.sendMessage(':green_book: | Não há nenhum comando personalizado neste servidor.')
     } else if (!database[message.guild.id].comandos) {
@@ -28,4 +31,4 @@ exports.run = (bot, message, args) => {
             }
         }
     }
-}}
+}}}

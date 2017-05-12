@@ -3,13 +3,33 @@ var moment = require('moment');
 moment.locale('pt-BR');
 const fs = require("fs")
 let comandos = JSON.parse(fs.readFileSync('./comandos.json', 'utf8'))
+let config = JSON.parse(fs.readFileSync('./config.json', 'utf8'))
 exports.run = (bot, message, args) => {
     let parts = message.content.split(' ');
     let argsJunto = message.content.split(" ").slice(1).join(' ');
     if(argsJunto < 1) {
     const HelpEmbed = new Discord.RichEmbed()
     HelpEmbed.setAuthor('Solicitado por ' + message.author.username, message.author.avatarURL);
-    HelpEmbed.addField('Comandos', '`' + Object.keys(comandos).join('` `') + '`\n\n**Prefix:** `mixy.` ou `m.`\n\nPara ver mais sobre um comando, execute `mixy.help (comando)`.\n**Exemplo:** `mixy.help poll`')
+
+    let database = JSON.parse(fs.readFileSync('./database/serversconfig.json', 'utf8'))
+    if (message.channel.type !== 'dm') {
+        if(database[message.guild.id]) {
+            if(database[message.guild.id].prefix) {
+                if(database[message.guild.id].prefix !== "none") {
+                    var Prefixes = '`' + config.aliases.join('`, `') + '`, `' + database[message.guild.id].prefix + '`'
+                } else {
+                    var Prefixes = '`' + config.aliases.join('`, `') + '`'
+                }
+            } else {
+                var Prefixes = '`' + config.aliases.join('`, `') + '`'
+            }
+        } else {
+            var Prefixes = '`' + config.aliases.join('`, `') + '`'
+        }
+    } else {
+        var Prefixes = '`' + config.aliases.join('`, `') + '`'
+    }
+    HelpEmbed.addField('Comandos', '`' + Object.keys(comandos).join('` `') + '`\n\n**Prefixes:** ' + Prefixes + '\n\nPara ver mais sobre um comando, execute `mixy.help (comando)`.\n**Exemplo:** `mixy.help poll`')
     HelpEmbed.setFooter('Mixybot criado por SMix.', 'https://cdn.discordapp.com/avatars/294881981630644224/fa9e90b10df8173085dd4a84ab67f52f.webp?size=1024');
     if(message.channel.type === 'dm') {
         message.channel.sendEmbed(HelpEmbed)

@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-var moment = require("moment")
 const config = require("../config.json")
 exports.run = (bot, message, args) => {
 	if(message.author.id === config.dono) {
