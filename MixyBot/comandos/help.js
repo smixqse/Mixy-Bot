@@ -16,18 +16,18 @@ exports.run = (bot, message, args) => {
         if(database[message.guild.id]) {
             if(database[message.guild.id].prefix) {
                 if(database[message.guild.id].prefix !== "none") {
-                    var Prefixes = '`' + config.aliases.join('`, `') + '`, `' + database[message.guild.id].prefix + '`'
+                    var Prefixes = '`' + config.prefixes.join('`, `') + '`, `' + database[message.guild.id].prefix + '`'
                 } else {
-                    var Prefixes = '`' + config.aliases.join('`, `') + '`'
+                    var Prefixes = '`' + config.prefixes.join('`, `') + '`'
                 }
             } else {
-                var Prefixes = '`' + config.aliases.join('`, `') + '`'
+                var Prefixes = '`' + config.prefixes.join('`, `') + '`'
             }
         } else {
-            var Prefixes = '`' + config.aliases.join('`, `') + '`'
+            var Prefixes = '`' + config.prefixes.join('`, `') + '`'
         }
     } else {
-        var Prefixes = '`' + config.aliases.join('`, `') + '`'
+        var Prefixes = '`' + config.prefixes.join('`, `') + '`'
     }
     HelpEmbed.addField('Comandos', '`' + Object.keys(comandos).join('` `') + '`\n\n**Prefixes:** ' + Prefixes + '\n\nPara ver mais sobre um comando, execute `mixy.help (comando)`.\n**Exemplo:** `mixy.help poll`')
     HelpEmbed.setFooter('Mixybot criado por SMix.', 'https://cdn.discordapp.com/avatars/294881981630644224/fa9e90b10df8173085dd4a84ab67f52f.webp?size=1024');
