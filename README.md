@@ -1,4 +1,7 @@
 # Mixy-Bot
+
+AVISO: Este bot está quebrado e é antigo. Se quiser hostear um bot, use o Onlimy.
+
 ## Um bot de utilitários brasileiro feito para ajudar servidores!
 
 MixyBot é um bot brasileiro feito por SMix#9658 para dar uma ajudinha em servidores, tanto em moderação quanto em outras coisas.
